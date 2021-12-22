@@ -1,0 +1,17 @@
+.form-container{
+    margin: auto;
+    transform: translate(10%,20%);
+    padding: 40px;
+    width: 600px;
+    background-color: red;
+    /* position: relative; */
+}
+.wrapper{
+    padding: auto;
+    background-color: black;
+}
+input{
+    height: 35px;
+    margin-top: 20px;
+    width: 320px;
+}
