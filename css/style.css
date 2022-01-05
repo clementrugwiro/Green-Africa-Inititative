@@ -11,9 +11,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
-  font-family: 'Gemunu Libre', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   background-color: rgb(229, 249, 224);
@@ -34,6 +34,11 @@ h4 {
 a {
   text-decoration: none;
   color: inherit;
+}
+ul a{
+  font-family: 'Island Moments', cursive;
+  font-size: 32px;
+  font-weight: 800;
 }
 li {
   color: darkgreen;
@@ -69,9 +74,10 @@ a:hover{
   height: fit-content;
   /* background-color: rgb(1, 22, 39); */
   background-color:  rgb(247, 247, 247);
+  z-index: 1;
 }
 .nav {
-  padding: 1.6rem 0;
+  padding:  0;
 }
 
 .nav.fix-nav {
@@ -81,7 +87,7 @@ a:hover{
   width: 100%;
   background-color: darkslateblue;
   box-shadow: 0 5px 15px grey;
-  z-index: 999;
+  z-index: 9;
 }
 .navigation {
   display: flex;
@@ -130,11 +136,10 @@ a:hover{
 .hero-content h1 span{
   color: rgb(5, 5, 5);  
   /* color: rgb(148, 209, 190); */
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 700;
     display: block;
-    /* font-family:  'Bonheur Royale', cursive; */
-    font-family: 'Gemunu Libre', sans-serif;
+    font-family: 'Island Moments', cursive;;
     line-height: 1;
     /* text-shadow: 3px 3px 0 bisque, 4px 4px 0 rgb(157, 181, 178); */
 }
@@ -261,7 +266,7 @@ cursor: pointer;
  }
  }
  .section{
-  padding: 10rem 0 5rem 0;
+  padding: 3rem 0 5rem 0;
 }
 .logo img{
   height: 100px;
@@ -272,13 +277,15 @@ cursor: pointer;
 /* main */
 .sect1{
   position: relative;
-  background-color: transparent;
+  background-color: rgb(220, 240, 215);
   display: flex;
   justify-content: space-between;
   height: fit-content;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 p{
-  font-family: 'Lexend deca';
+  font-family:'Indie Flower', cursive;;
   line-height: 1.4rem;
   font-size: 30px;
   font-weight: 400;
@@ -301,9 +308,18 @@ p{
 #sec22 p{
 text-align: center;
 }
+#tit{
+  font-family: 'Island Moments', cursive;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: -20px;
+  font-size: 38px;
+}
 .sect2{
   
   height: 85vh;
+  margin-bottom: 50px;
+  display: flex;
   
 }
 .sec1{ 
@@ -375,6 +391,115 @@ background-color: rgb(156, 252, 151);
   color: white;
   cursor: pointer;
 }
+
+
+
+  /* products */
+
+  .product{
+    height: 45rem;
+    background-color: rgb(97, 139, 74);
+    box-shadow: 0 .5rem 1.5rem rgb(160, 153, 153);
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+    width: 300px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 60px;
+    }
+    
+.product:hover{
+        box-shadow: 0 .5rem 1.5rem black;
+    }
+    .price p{
+      font-family: 'Moon Dance', cursive;
+      float: left;
+      font-size: 22px;
+      margin-top: 0px;
+      color: black;
+    }
+    .product-header{
+        position: relative;
+        background-color: slategray;
+        height: 35rem;
+        transition: all 300ms ease-in-out;
+        z-index: 0;
+    }
+    
+    .product-header img{
+        height: 100%;
+        width: 300px;
+    }
+    .product-footer{
+        padding:5px
+    }
+    
+   
+    
+    .product:hover .product-header::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 1rem 1rem 0 0;
+        background-color: rgb(8, 1, 1);
+        opacity: 0.4;
+        z-index: 1;
+        transition: all 500ms ease-in-out;
+    }
+    
+    .product-header .icons{
+        position: absolute;
+        top:50%;
+        right: 2%;
+        transform: translate(0,-50%) scale(0);
+        z-index: 2;
+        opacity: 0;
+        transition: all 500ms ease-in-out;
+    }
+    
+    .product-header .icons span{
+        background-color: rgb(64, 83, 27);
+        font-size: 2.5rem;
+        display: block;
+        border-radius: 50%;
+        border: 0.5px solid white;
+        padding: 1.5rem 1.6rem;
+        line-height: 1rem;
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+    }
+    
+    .product-header .icons span i{
+        transition: all 500ms ease-in-out;
+    }
+    
+    .product-header .icons span:not(:last-child){
+    margin-bottom: 1rem;
+    }
+    
+    .product-header .icons span:hover{
+        background: rgb(255, 231, 76);
+        color: black;
+        border: 0.5px solid black;
+    }
+    
+    .product:hover .icons{
+         opacity: 1;
+         transform: translate(0,-50%) scale(1);
+    }
+    
+    .product:hover .icons {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+
+
+
  /* footer */
  .footer{
   background-color: rgb(180, 244, 205);
@@ -389,6 +514,7 @@ background-color: rgb(156, 252, 151);
 .footer-container{
   height: fit-content;
   display: grid;
+  
   grid-template-columns: repeat(4, 1fr);
   color: rgb(0, 0, 0);
 }
@@ -402,7 +528,7 @@ background-color: rgb(156, 252, 151);
 }
 
 .footer-center a:hover{
-    color: rgb(36, 10, 182);
+    color: rgb(4, 80, 33);
 }
 
 .footer-center div{
@@ -416,14 +542,73 @@ background-color: rgb(156, 252, 151);
   margin-bottom: 1rem;
 }
 @media only screen and (max-width: 996px){
+  .hero-content{
+    transform: translate(5%, 0%);
+}
   .footer-container{
       grid-template-columns: repeat(2, 1fr);
       row-gap: 2rem;
   }
+      #sec21{
+        width: 35%;
+      }
+
+      #sec22{
+        padding-left: -90px;
+      }
+      .sect2{
+        padding: 0;
+      }
+
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 758px){
   .footer-container{
       grid-template-columns: 1fr;
+  }
+  #textslide{
+    font-size: 19px;
+  }
+  .hero-content h1{
+    font-size: 10px;
+  }
+  #acts{
+    font-size: 18px;
+  }
+  .sect2{
+    margin-bottom: 120px;
+  }
+  .sect1{
+    display: inline;
+  }
+  
+  .sec1{
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .sect2{
+    margin-bottom: 140px;
+    background-color: blue;
+    display: inline;
+  }
+  #acts{
+    font-size: 14px;
+  }
+  #textslide{
+    font-size: 15px;
+  }
+  #sec21{
+    margin: auto;
+    margin-top: -120px;
+    margin-bottom: 10px;
+    width: 80%;
+  }
+  #sec22{
+    margin: auto;
+    margin-top: -140px;
+    width: 80%;
   }
 }

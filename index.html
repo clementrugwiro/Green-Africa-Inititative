@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Green-Africa-Initiative</title>
     <link rel="shortcut icon" href="./images/logo-trans.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style1.css">
+   
   </head>
   <body onload="changeText();">
     <header  class="header">
@@ -15,7 +20,7 @@
       <nav class="nav">
         <div class="navigation">
           <div class="logo">
-            <img src="./images/logo-trans.png" alt="">
+           <a href="#homef"><img src="./images/logo-trans.png" alt=""></a>
           </div>
           <div class="menu">
             <div class="top-nav">
@@ -66,46 +71,154 @@
     </header>
 
     <main>
-     <div class="section" >
+     <div class="section" id="homef">
 
-        <div class="sect2" style="display: flex;">
+        <div class="sect2" ">
           <div id="sec21" ><img src="./images/logo-trans.png  " class="hero-img" alt="" /></div> 
           <div id="sec22" class="hero-content" >
             <h1>
               <span>What is Green Africa Initiative?</span>
             </h1>
               <p  id="textslide"></p>
-            <a href="#" class="butn">shop now</a>
+            <a href="#" class="butn">Contact us</a>
           </div>
         </div>
-            <div  class="sect1">
-              <div  class="sec1" style="background-color: red;">
+            <div  class="sect1" >
+              <div class="sec1">
+                <h2 id="tit"></h2>
+                <p id="acts"> </p>
+              </div>
+              <div  class="sec1">
                 <img class="avoc" id="img1" src="./images/avocado-1.jpg" alt="avocado">
-                <!-- <img class="avoc" id="img1" src="./images/lucas-rosin-Tu3nL_E0PAU-unsplash.jpg" alt=""> -->
                 <img class="avoc" id="img1" src="./images/petra-hucht-eGgRCXs7CO4-unsplash.jpg" alt="">
                 <img class="avoc" id="img1" src="./images/jametlene-reskp-C-Oi6NoQXDQ-unsplash.jpg" alt="">
               </div>
-              <div class="sec1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non atque commodi repudiandae sint. Necessitatibus, eaque laudantium repellendus eum eligendi praesentium eos, maxime, doloremque architecto molestiae cum nisi id minus illo?</p>
-              </div>
             </div>
         </div>
-    </main>     
+              <div style="display:flex;flex-wrap: wrap;justify-content: center;">
+                <div class="product">
+                  <div class="product-header">
+                      <img src="./images/avocado-1.jpg" alt="">
+                      <ul class="icons">
+                          <span><i class="bx bx-heart"></i></span>
+                          <span><i class="bx bx-shopping-bag"></i></span>
+                          <span onclick="openForm()"><i class="bx bx-search" data-modal-target="#modal"></i></span>
+                      </ul>
+                  </div>
+                  <div class="product-footer">
+                      <a href="#">AVOCADO</a>
+                      <h4 class="price"><img style="height: 30px;float: left;" src="./images/dollar.png" alt=""><p>$2</p></h4>
+                  </div>
+            </div>
+           
+            <div class="product">
+              <div class="product-header">
+                  <img src="./images/jakob-owens-IJjHjEPAAm4-unsplash.jpg" alt="">
+                  <ul class="icons">
+                      <span><i class="bx bx-heart"></i></span>
+                      <span><i class="bx bx-shopping-bag"></i></span>
+                      <span onclick="openForm()"><i class="bx bx-search"></i></span>
+                  </ul>
+              </div>
+              <div class="product-footer">
+                  <a href="#">MANGO</a>
+                  <h4 class="price"><img style="height: 30px;float: left;" src="./images/dollar.png" alt=""><p>$2</p></h4>
+              </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+              <img src="./images/brenda-melgoza-Fi3hmicBJLE-unsplash.jpg" alt="">
+              <ul class="icons">
+                  <span><i class="bx bx-heart"></i></span>
+                  <span><i class="bx bx-shopping-bag"></i></span>
+                  <span onclick="openForm()"><i class="bx bx-search"></i></span>
+              </ul>
+          </div>
+          <div class="product-footer">
+              <a href="#">PAWPAW</a>
+              <h4 class="price"><img style="height: 30px;float: left;" src="./images/dollar.png" alt=""><p>$2</p></h4>
+          </div>
+    </div>
+    <div class="product">
+      <div class="product-header">
+          <img src="./images/jared-subia-QvSELQMO0ao-unsplash.jpg" alt="">
+          <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+              <span onclick="openForm()"><i class="bx bx-search"></i></span>
+          </ul>
+      </div>
+      <div class="product-footer">
+          <a href="#">ORANGE</a>
+          <h4 class="price"><img style="height: 30px;float: left;" src="./images/dollar.png" alt=""><p>$2</p></h4>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product-header">
+          <img src="./images/Tamarillos.jpg" alt="">
+          <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+              <span onclick="openForm()"><i class="bx bx-search"></i></span>
+          </ul>
+      </div>
+      <div class="product-footer">
+          <a href="#">JAPANESE PLUM</a>
+          <h4 class="price"><img style="height: 30px;float: left;" src="./images/dollar.png" alt=""><p>$2</p></h4>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product-header">
+          <img src="./images/anisa-wulan-asri-dSb8R7QAeLM-unsplash.jpg" alt="">
+          <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+              <span  onclick="openForm()"><i class="bx bx-search"></i></span>
+          </ul>
+      </div>
+      <div class="product-footer">
+          <a href="#">GUAVA</a>
+          <h4 class="price"><img style="height: 30px;float: left;" src="./images/dollar.png" alt=""><p>$2</p></h4>
+      </div>
+    </div>
+    </main> 
+    <!-- form-trial     -->
+    <div class="form-popup" id="myForm">
+  <div class="form-pop">
+    <form action="#" class="form-container">
+      <button type="button" class="btn cancel" id="btn-cancel" onclick="closeForm()">X</button><br>
+      <h1>CONTACT US</h1>
+  
+      <label for="Fname"><b>FirstName</b></label><br>
+      <input type="text" placeholder="Enter Your first name" name="fname" required><br>
+      <label for="Lname"><b>Email</b></label><br>
+      <input type="text" placeholder="Enter Your last name" name="lname"><br>
+      <label for="email"><b>Email</b></label><br>
+      <input type="text" placeholder="Enter Email" name="email" required><br>
+      <label for="email"><b>Phone Number</b></label><br>
+      <input type="text" placeholder="Enter Your phone number" name="pnumber" required><br>
+      <label for="email"><b>Message</b></label><br>
+      <input type="text" placeholder="Enter a Message" name="message" required><br>
+      <button type="submit" class="btn">Send</button>
+      
+    </form>
+  </div>
+</div>
     
     <!-- footer -->
     <footer id="footer" class="section footer">
       <div class="container">
           <div class="footer-container">
               <div class="footer-center">
-                  <h3>EXTRA</h3>
-                  <a href="#">Brands</a>
-                  <a href="#">Gift Certificate</a>
-                  <a href="#">Affiliate</a>
-                  <a href="#">Special</a>
-                  <a href="#">Site Map</a>
+                  <h3>CONTACTS</h3>
+                  <a href="#">Instagram</a>
+                  <a href="#">Facebook</a>
+                  <a href="#">Twitter</a>
+                  <a href="#">+250 788 306 494</a>
+                  <a href="#">ccidrwanda@gmail.com</a>
               </div>
           <div class="footer-center">
-              <h3>INFORMATION</h3>
+              <h3>INmodalATION</h3>
               <a href="#">About Us</a>
               <a href="#">Privacy Policy</a>
               <a href="#">Terms & conditions</a>
